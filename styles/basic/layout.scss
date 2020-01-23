@@ -1,0 +1,73 @@
+body {
+  font-family: $mainFont;
+  background-image: url(../public/metall-bg.jpg);
+  background-size: cover;
+}
+
+.main-container {
+  display: flex;
+  align-items: first;
+}
+.manage {
+  padding-right: 30px;
+}
+.container {
+
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 200px auto;
+
+  &--main {
+    border: #ced4da solid 1px;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+select,
+input {
+  background-color: $white;
+  border: 1px solid $gray;
+  border-radius: 0.25rem;
+  outline: 0;
+}
+
+input,
+input::placeholder {
+  color: $black;
+}
+
+select {
+  padding-left: 10px;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  padding: 22px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  text-align: center;
+  white-space: nowrap;
+  touch-action: manipulation;
+  cursor: pointer;
+  color: black;
+  outline: snow;
+  transition: all 0.2s;
+
+  &:hover {
+
+    background-color: #FFF200;
+    transition: all 0.3s;
+
+  }
+}
